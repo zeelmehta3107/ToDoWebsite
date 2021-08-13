@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <h3 class="text-center">Are you Sure You Want to Logout !!</h3><br>
+    <div class="text-center container">
+    <a class="btn btn-primary" href="{% url 'Home' %}" role="button">Go Back</a>
+    &nbsp;
+    <a class="btn btn-primary" href="{% url 'logout' %}" role="button">Logout</a>
+    </div>
+    
+{% endblock content %}

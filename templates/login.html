@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1 class="text-center">Login Page</h1>
+
+<div class="container">
+<form action="" method="POST">
+{% csrf_token %}
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username">
+    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
+  </div>
+  <input type="submit" class="btn btn-primary">
+</form>
+</div>
+
+{% endblock content %}
